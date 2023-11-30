@@ -40,3 +40,17 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-end;
+}

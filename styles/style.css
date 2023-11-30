@@ -1,5 +1,95 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color);
+  font-family: var(--font-family, "Arial", "Helvetica", sans-serif );
+  font-size: 18px;
+}
+
+.accent {
+  display: none;
+}
+
+
+.header {
+  background-image: url(../images/cover-image-light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 668px;
+  padding: 10px;
+}
+
+
+ 
+.title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--color-title);
+  text-shadow: 4px 4px 0 var(--bg-color-accent);
+  text-transform: lowercase;
+  padding-bottom: 55px;
+}
+
+.header__theme-menu {
+  padding: 30px 0 40px;
+}
+
+.header__theme-menu-button_active {
+  display: inline-flex;
+  border: 1px solid var(--color);
+  padding: 0 13px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header__text {
+  font-weight: 700;
+  line-height: 130%;
+  background-color: var(--bg-color-accent);
+} 
+
+.decorated-zone__border-top {
+  border-inline-end: 1px solid var(--color);
+  border-block-start: 1px solid var(--color);
+  width: 25px;
+  height: 25px;
+  margin-inline-start: auto;
+}
+
+.decorated-zone__border-bottom {
+  border-inline-start: 1px solid var(--color);
+  border-block-end: 1px solid var(--color);
+  width: 25px;
+  height: 25px;
+  margin-inline-end: auto;
+  margin-block-start: auto;
+
+}
+
+@media ( 768px <= width < 1024px) {
+
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__text {
+   max-width: 364px;
+   margin-left: auto;
+  }
+  
+}
+
+@media ( width >= 1024px) {
+  
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__text {
+    max-width: 491px;
+    margin-left: auto;
+  }
 }
