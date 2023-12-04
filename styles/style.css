@@ -37,7 +37,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  min-height: 668px;
+  height: 100%;
   margin-block-end: 29px;
   padding: 2.5vw; 
 }
@@ -61,6 +61,7 @@
   line-height: 130%;
   color: var( --color-accent-text);
   background-color: var(--bg-color-accent);
+  margin-block-end: 32px;
 } 
 
 .header__theme-menu {
@@ -198,13 +199,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 667px;
+  height: 100vh;
   align-items: center;
   padding: 0 2.5vw 18px;
 }
 
-.footer__title  {
-  margin-block-start: 290px;
+.footer__title {
+  margin-block-start: auto;
   margin-block-end: auto;
 }
 
@@ -327,14 +328,6 @@
 
   .street {
     grid-area: street;
-  }
-
-  .footer {
-    min-height: 1024px;
-  }
-
-  .footer__title {
-    margin-block-start: 454px;
   }
 }
 
@@ -472,10 +465,6 @@
 
   .street {
     grid-area: street;
-  }
-
-  .footer__title {
-    margin-block-start: 328px;
   }
 }
 
