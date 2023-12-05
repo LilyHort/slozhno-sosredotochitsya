@@ -15,11 +15,13 @@
 .accent {
   display: block;
   color: var(--bg-color-accent);
-  position: relative;
+  position: absolute;
   margin-inline-start: auto;
   margin-inline-end: 29px;
   margin-block-start: -23px;
   text-transform: uppercase;
+  right: 7px;
+  top: 30px;
 }
 
 .accent::after {
@@ -29,17 +31,18 @@
   height: 9px;
   width: 9px;
   position: absolute;
-  top: 6px;
-  left: 40px;
+  top: 7px;
+  left: 41px;
   border-radius: 50%;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  margin-block-end: 29px;
-  padding: 2.5vw; 
+  justify-content: space-between; 
+  position: relative;
+  height: 100vh;
+  padding: 1.6vw 2vw;;
 }
 
 .title {
@@ -52,8 +55,7 @@
 }
 
 .header__title {
-  padding-bottom: 51px;
-  line-height: 104px;
+  line-height: 95px;
 }
 
 .header__text {
@@ -61,15 +63,16 @@
   line-height: 130%;
   color: var( --color-accent-text);
   background-color: var(--bg-color-accent);
-  margin-block-end: 32px;
 } 
 
 .header__theme-menu {
-  padding: 41px 0 50px;
+  margin-inline-start: auto;
 }
 
 .header__theme-menu-list {
   color: var(--color-accent);
+  display: flex;
+  align-items: center;
 }
 
 .header__theme-menu-button_active {
@@ -98,6 +101,7 @@
   width: 25px;
   height: 25px;
   margin-inline-start: auto;
+  align-self: baseline;
 }
 
 .decorated-zone-bottom {
@@ -105,8 +109,9 @@
   border-block-end: 1px solid var(--border-active);
   width: 25px;
   height: 25px;
-  margin-inline-end: auto;
-  margin-block-start: auto;
+  position: relative;
+  bottom: 20px;
+  align-self: baseline;
 }
 
 .main {
@@ -215,22 +220,18 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
+  .accent {
+    right: 16px;
+    top: 37px;
+  }
+
   .header {
     margin-block-end: 41px;
-  }
-
-  .header__title {
-    margin: 0 0 104px -16px
-  }
-
-  .header__theme-menu {
-   padding:  145px 4px 171px;
   }
 
   .header__text {
    max-width: 364px;
    margin-inline-start: auto;
-    margin-block-end: 141px;
   }
 
   .article {
@@ -337,14 +338,18 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
+  .accent {
+    right: 20px;
+    top: 47px
+  }
+
   .header {
-    padding: 32px 2vw;
+    padding:2vw;
     margin-block-end: 117px;
   }
 
   .header__theme-menu {
-    padding: 0;
-    margin-block-start: -25px;
+    margin: -150px auto;
   }
 
   .header__text {
