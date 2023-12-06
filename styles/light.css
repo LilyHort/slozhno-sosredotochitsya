@@ -15,11 +15,11 @@
   --color-tab: #353430;
 }
 
-.accent::before {
+.page.theme_light .accent::before {
   color: transparent;
   }
 
-.accent::after {
+  .page.theme_light .accent::after {
     background-color: transparent;
     filter: transparent;
   }
@@ -42,11 +42,11 @@
     --color-tab: #353430;
   }
  
-  .accent::before {
+  .page.theme_auto .accent::before {
     color: transparent;
   }
 
-  .accent::after {
+  .page.theme_auto .accent::after {
     background-color: transparent;
     filter: transparent;
   }
