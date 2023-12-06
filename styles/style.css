@@ -396,8 +396,7 @@
   }
 
   .footer {
-    min-height: 993px;
-    max-height: 1025px;
+    max-height: 993px;
     padding: 0 2.5vw;
   }
 
@@ -441,7 +440,7 @@
   }
 
   .header__theme-menu {
-    margin: -27px 0;; 
+    margin: -27px 0;
   }
 
   .header__theme-menu-list {
@@ -578,7 +577,7 @@
   }
 
   .footer {
-    min-height: 748px;
+    max-height: 748px;
     padding: 0 2vw;
   }
 
