@@ -11,6 +11,17 @@
   --font-family: "IBM Plex Mono", "Arial", "Helvetica", sans-serif;
   --font-size: 18px;
   --line-height: 130%;
+  --bright-shadow: #FF0070;
+  --color-tab: #353430;
+}
+
+.page.theme_light .accent::before {
+  color: transparent;
+}
+
+.page.theme_light .accent::after {
+  background-color: transparent;
+  filter: transparent;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,13 +38,16 @@
     --color-hover: #32312d66;
     --font-family: "IBM Plex Mono", "Arial", "Helvetica", sans-serif;
     --font-size: 18px;
+    --bright-shadow: #FF0070;
+    --color-tab: #353430;
+  }
+ 
+  .page.theme_auto .accent::before {
+    color: transparent;
   }
 
-  .page.theme_light .accent {
-    display: none;
-  }
-  
-  .page.theme_auto .accent {
-    display: none;
+  .page.theme_auto .accent::after {
+    background-color: transparent;
+    filter: transparent;
   }
 }

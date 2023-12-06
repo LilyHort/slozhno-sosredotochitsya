@@ -11,11 +11,18 @@
   --font-family: "IBM Plex Mono", "Arial", "Helvetica", sans-serif;
   --font-size: 18px;
   --line-height: 130%;
+  --bright-shadow: #FF0070;
+  --color-tab:#FF0070;
 }
 
 @media (prefers-color-scheme: dark) {
 
-  .page.theme_light .accent {
-    display: none;
+  .page.theme_light .accent::before {
+    color: transparent;
+  }
+
+  .page.theme_light .accent::after {
+    background-color: transparent;
+    filter: transparent;
   }
 }

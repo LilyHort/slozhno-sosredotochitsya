@@ -45,6 +45,7 @@ a {
   background-color: transparent;
   border: none;
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .header__theme-menu-list {
