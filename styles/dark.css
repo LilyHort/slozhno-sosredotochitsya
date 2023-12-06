@@ -8,7 +8,7 @@
   --color: #F1B2CE;
   --color-title: #DB00FF;
   --color-hover: #ff007066;
-  --font-family: "IBM Plex Mono";
+  --font-family: "IBM Plex Mono", "Arial", "Helvetica", sans-serif;
   --font-size: 18px;
   --line-height: 130%;
 }
