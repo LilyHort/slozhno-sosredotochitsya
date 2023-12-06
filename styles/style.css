@@ -395,6 +395,7 @@
   }
 
   .footer {
+    height: 100vh;
     padding: 0 2.5vw;
   }
 
@@ -575,6 +576,7 @@
   }
 
   .footer {
+    height: 100vh;
     padding: 0 2vw;
   }
 
