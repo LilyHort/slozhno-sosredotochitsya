@@ -14,7 +14,7 @@
 
 .header {
   max-height: 648px;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   display: grid;
   grid-template-rows:  26px min-content min-content min-content;
@@ -253,7 +253,7 @@
   }
 
   .header {
-    min-height: 1024px;
+    min-height: 100vh;
     max-height: 1024px;
     margin-block-end: 42px;
   }
@@ -413,6 +413,7 @@
 
   
   .header {
+    min-height: 100vh;
     max-height: 768px;
     padding:2vw;
     margin-block-end: 41px;
