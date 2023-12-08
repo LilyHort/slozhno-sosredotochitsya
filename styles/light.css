@@ -16,12 +16,11 @@
 }
 
 .page.theme_light .accent::before {
-  color: transparent;
+  display: none;
   }
 
   .page.theme_light .accent::after {
-    background-color: transparent;
-    filter: transparent;
+    display: none;
   }
 
 @media (prefers-color-scheme: light) {
@@ -43,11 +42,10 @@
   }
  
   .page.theme_auto .accent::before {
-    color: transparent;
+    display: none;
   }
 
   .page.theme_auto .accent::after {
-    background-color: transparent;
-    filter: transparent;
+    display: none;
   }
 }
